@@ -1,6 +1,6 @@
 # Hi, I'm Eden
 
-Software engineer based in Spain.
+Developer based in Europe, Madrid and Amsterdam.
 
 ## Open Source Contributions
 
