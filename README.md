@@ -10,6 +10,18 @@ Developer based in Europe, Madrid and Amsterdam.
 - **f_regression floating-point fix** — Fixed `RuntimeWarning` from negative variance in `r_regression` when features are constant ([#11395](https://github.com/scikit-learn/scikit-learn/issues/11395)). Clamped intermediate squared norms to zero before taking the square root.
 - **reconstruct_from_patches_2d** — Fixed incorrect image reconstruction when patch dimensions equal image dimensions ([#10910](https://github.com/scikit-learn/scikit-learn/issues/10910)). The overlap counting formula was missing a constraint on the number of patches.
 
+### [Qlib](https://github.com/microsoft/qlib) — Microsoft's AI-oriented quantitative investment platform
+
+- **TanhProcess MultiIndex level** — Fixed data preprocessor applying tanh denoising to label columns instead of feature columns due to wrong MultiIndex level lookup ([#1687](https://github.com/microsoft/qlib/issues/1687)).
+- **TCN model single-sample batch** — Fixed Temporal Convolutional Network predict crash when the last DataLoader batch contains a single sample, producing a 0-d array incompatible with `np.concatenate` ([#1752](https://github.com/microsoft/qlib/issues/1752)).
+- **Workflow datetime level resolution** — Fixed `PortAnaRecord` failing with ambiguous datetime level in MultiIndex by using positional lookup instead of string-based resolution ([#1909](https://github.com/microsoft/qlib/issues/1909)).
+
+### [Hummingbot](https://github.com/hummingbot/hummingbot) — open-source crypto market making and arbitrage engine
+
+- **RESTResponse JSON parsing** — Hardened the REST client to gracefully handle non-JSON responses across all content types, preventing crashes on exchanges that return raw text like `pong` ([#7929](https://github.com/hummingbot/hummingbot/issues/7929)).
+- **Backtesting PnL calculation** — Fixed the position executor simulator to use the configured entry price instead of the first candle's close, and corrected the cumulative PnL formula ([#8142](https://github.com/hummingbot/hummingbot/issues/8142)).
+- **Backtesting candles connector** — Fixed the backtesting engine to use `candles_connector` when it differs from the trading connector, preventing `UnsupportedConnectorException` on exchanges without candle providers ([#7886](https://github.com/hummingbot/hummingbot/issues/7886)).
+
 ### [Dagster](https://github.com/dagster-io/dagster) — Python data orchestration framework
 
 - **Cross-partition automation conditions** — Fixed `will_be_requested()` returning incorrect results when an unpartitioned asset depends on a partitioned one ([#32935](https://github.com/dagster-io/dagster/issues/32935)). Reordered partition boundary checks in `executable_in_same_run()`.
