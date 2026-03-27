@@ -9,6 +9,7 @@ Developer based in Europe, Madrid and Amsterdam.
 - **HuberRegressor convergence handling** — Fixed incorrect `ValueError` when L-BFGS-B solver fails to converge ([#27777](https://github.com/scikit-learn/scikit-learn/issues/27777)). Now emits `ConvergenceWarning` consistent with other estimators like `LogisticRegression`.
 - **f_regression floating-point fix** — Fixed `RuntimeWarning` from negative variance in `r_regression` when features are constant ([#11395](https://github.com/scikit-learn/scikit-learn/issues/11395)). Clamped intermediate squared norms to zero before taking the square root.
 - **reconstruct_from_patches_2d** — Fixed incorrect image reconstruction when patch dimensions equal image dimensions ([#10910](https://github.com/scikit-learn/scikit-learn/issues/10910)). The overlap counting formula was missing a constraint on the number of patches.
+- **RadiusNeighborsRegressor NaN prediction** — Fixed incorrect predictions for integer targets when no neighbors found within the specified radius ([#12960](https://github.com/scikit-learn/scikit-learn/issues/12960)).
 
 ### [Qlib](https://github.com/microsoft/qlib) — Microsoft's AI-oriented quantitative investment platform
 
