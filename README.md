@@ -2,6 +2,12 @@
 
 Developer based in Europe, Madrid and Amsterdam.
 
+## Projects
+
+### [ScreenFind](https://github.com/EdenRochmanSharabi/ScreenFind) — Universal Ctrl+F for macOS
+
+A menu bar app that captures all screens, runs OCR via Apple Vision framework, and highlights matching text in-place with a dimmed overlay. Real-time search, multi-monitor support, off-screen text detection via Accessibility API. Zero third-party dependencies.
+
 ## Open Source Contributions
 
 ### [scikit-learn](https://github.com/scikit-learn/scikit-learn) — core Python ML library
