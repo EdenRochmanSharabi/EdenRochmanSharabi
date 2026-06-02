@@ -1,4 +1,4 @@
-# Hi, I'm Eden
+# Hi, it's Eden
 
 Developer based in Europe, Madrid and Amsterdam.
 
