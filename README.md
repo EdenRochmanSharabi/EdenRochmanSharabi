@@ -22,3 +22,4 @@ A menu bar app that captures all screens, runs OCR via Apple Vision framework, a
 ### [statsmodels](https://github.com/statsmodels/statsmodels) — statistical models and econometrics in Python
 
 - **L-BFGS-B optimizer respects `disp=False`** — Fixed the optimizer printing convergence output unconditionally by passing the `disp` flag through to `scipy.optimize.minimize` ([PR #9823](https://github.com/statsmodels/statsmodels/pull/9823)).
+- **Remove dead `cov_p` assignment in GLM fit** — Removed a redundant assignment to `cov_p` that was always overwritten by the hessian-based computation immediately after ([PR #9826](https://github.com/statsmodels/statsmodels/pull/9826)).
