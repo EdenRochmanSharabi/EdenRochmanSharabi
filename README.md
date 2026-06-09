@@ -1,6 +1,11 @@
 # Hi, it's Eden
 
-Developer based in Europe, Madrid and Amsterdam.
+Developer based in Europe, with experience in Madrid and Amsterdam.
+
+I enjoy a wide range of topics, including mathematics, AI/ML, theoretical concepts, especially in mathematics and computer science, finance, among others. I studied AI & Data Science at Maastricht University, Actuarial Science and Mathematical Finance at the University of Amsterdam (ongoing), and Sociology at the University of Granada.
+
+I also enjoy lifting heavy weights, rock climbing, running half marathons, diving, long-distance swimming, and generally engaging in hard (physical) activities.
+
 
 ## Projects
 
