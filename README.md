@@ -18,6 +18,9 @@ A menu bar app that captures all screens, runs OCR via Apple Vision framework, a
 ### [OpenMC](https://github.com/openmc-dev/openmc) — Monte Carlo particle transport simulation
 
 - **SphericalMesh.get_indices_at_coords** — Implemented coordinate-to-index lookup for spherical meshes, converting Cartesian `(x, y, z)` to spherical coordinates and returning `(r, θ, φ)` bin indices ([#3867](https://github.com/openmc-dev/openmc/issues/3867), [PR #3919](https://github.com/openmc-dev/openmc/pull/3919)).
+- **Model.description property** — Added a `description` attribute to `Model` that serializes as a `<description>` element in the model XML, with round-trip support and automatic omission when empty ([#3586](https://github.com/openmc-dev/openmc/issues/3586), [PR #3956](https://github.com/openmc-dev/openmc/pull/3956)).
+- **Material.get_activity chain parameter** — Added an optional `chain` parameter to `Material.get_activity()` and `Results.get_activity()` that accepts a depletion chain for half-life values, falling back to the default ENDF/B-VIII.0 data for nuclides not in the chain ([#3529](https://github.com/openmc-dev/openmc/issues/3529), [PR #3957](https://github.com/openmc-dev/openmc/pull/3957)).
+- **Collision count in particle splitting** — Fixed `CollisionFilter` producing biased tallies when weight windows are active by preserving `n_collision` across `Particle::split()` instead of resetting to zero ([#3916](https://github.com/openmc-dev/openmc/issues/3916), [PR #3958](https://github.com/openmc-dev/openmc/pull/3958)).
 
 ### [scikit-learn](https://github.com/scikit-learn/scikit-learn) — core Python ML library
 
@@ -28,3 +31,5 @@ A menu bar app that captures all screens, runs OCR via Apple Vision framework, a
 
 - **L-BFGS-B optimizer respects `disp=False`** — Fixed the optimizer printing convergence output unconditionally by passing the `disp` flag through to `scipy.optimize.minimize` ([PR #9823](https://github.com/statsmodels/statsmodels/pull/9823)).
 - **Remove dead `cov_p` assignment in GLM fit** — Removed a redundant assignment to `cov_p` that was always overwritten by the hessian-based computation immediately after ([PR #9826](https://github.com/statsmodels/statsmodels/pull/9826)).
+- **plot_forest pass `ax` to `dot_plot`** — Fixed `CombineResults.plot_forest` ignoring the caller's `ax` parameter, which created a new figure instead of reusing the provided axes ([#8718](https://github.com/statsmodels/statsmodels/issues/8718), [PR #9829](https://github.com/statsmodels/statsmodels/pull/9829)).
+- **Fix GLMInfluence.hat_matrix_diag method name** — Fixed a typo calling `get_hat_matrix()` instead of `get_hat_matrix_diag()`, which raised `AttributeError` when constructing `GLMInfluence` directly ([#9415](https://github.com/statsmodels/statsmodels/issues/9415), [PR #9830](https://github.com/statsmodels/statsmodels/pull/9830)).
