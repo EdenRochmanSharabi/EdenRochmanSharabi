@@ -13,6 +13,10 @@ I also enjoy lifting heavy weights, rock climbing, running half marathons, divin
 
 A menu bar app that captures all screens, runs OCR via Apple Vision framework, and highlights matching text in-place with a dimmed overlay. Real-time search, multi-monitor support, off-screen text detection via Accessibility API. Zero third-party dependencies.
 
+### CrossPoint MathML for Xteink X4
+
+Three-repo project to bring mathematical notation to the Xteink X4 e-reader. A [firmware fork](https://github.com/EdenRochmanSharabi/crosspoint-reader) adds on-device MathML linearization to the CrossPoint reader firmware, rendering formulas from plain MathML elements without external dependencies. A [QEMU-based emulator](https://github.com/EdenRochmanSharabi/crosspoint-simulator) runs the real firmware binary on an emulated ESP32-C3 for testing without hardware. A [CLI pipeline](https://github.com/EdenRochmanSharabi/math-epub-pipeline) audits and adapts math EPUBs for the device: TeX-to-MathML conversion, XML repair, font coverage checks, and OCR-based PDF-to-EPUB with verification.
+
 ## Open Source Contributions
 
 ### [OpenMC](https://github.com/openmc-dev/openmc) — Monte Carlo particle transport simulation
