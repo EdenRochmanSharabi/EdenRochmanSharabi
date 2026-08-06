@@ -27,6 +27,10 @@ A menu bar app that captures all screens, runs OCR via Apple Vision framework, a
 - **reconstruct_from_patches_2d** — Fixed incorrect image reconstruction when patch dimensions equal image dimensions ([#10910](https://github.com/scikit-learn/scikit-learn/issues/10910), [PR #33643](https://github.com/scikit-learn/scikit-learn/pull/33643)). The overlap counting formula was missing a constraint on the number of patches.
 - **DecisionBoundaryDisplay in SVM example** — Replaced manual contour plotting with `DecisionBoundaryDisplay.from_estimator()` in the SVM margins example ([#33980](https://github.com/scikit-learn/scikit-learn/issues/33980), [PR #34192](https://github.com/scikit-learn/scikit-learn/pull/34192)), improving consistency with the modern scikit-learn API.
 
+### [scipy](https://github.com/scipy/scipy) — fundamental algorithms for scientific computing
+
+- **lfilter early return on empty input** — Added an early return path to `scipy.signal.lfilter` for zero-length input arrays, returning immediately with the unchanged initial conditions instead of passing empty data through the filter loop ([PR #25334](https://github.com/scipy/scipy/pull/25334)).
+
 ### [statsmodels](https://github.com/statsmodels/statsmodels) — statistical models and econometrics in Python
 
 - **L-BFGS-B optimizer respects `disp=False`** — Fixed the optimizer printing convergence output unconditionally by passing the `disp` flag through to `scipy.optimize.minimize` ([PR #9823](https://github.com/statsmodels/statsmodels/pull/9823)).
