@@ -4,6 +4,8 @@ Developer based in Europe, working in the areas of Madrid and Amsterdam.
 
 I enjoy a wide range of topics, including mathematics, AI/ML, theoretical concepts, especially in mathematics and computer science, finance, among others. I studied AI & Data Science at Maastricht University, Actuarial Science and Mathematical Finance at the University of Amsterdam (ongoing), and Sociology at the University of Granada.
 
+Outside of formal coursework, I independently study topics that extend or complement my degrees. Recent subjects include category theory, measure theory, and information theory.
+
 I also enjoy lifting heavy weights, rock climbing, running half marathons, diving, long-distance swimming, and generally engaging in hard (physical) activities.
 
 
