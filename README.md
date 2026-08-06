@@ -7,16 +7,6 @@ I enjoy a wide range of topics, including mathematics, AI/ML, theoretical concep
 I also enjoy lifting heavy weights, rock climbing, running half marathons, diving, long-distance swimming, and generally engaging in hard (physical) activities.
 
 
-## Projects
-
-### [ScreenFind](https://github.com/EdenRochmanSharabi/ScreenFind) — Universal Ctrl+F for macOS
-
-A menu bar app that captures all screens, runs OCR via Apple Vision framework, and highlights matching text in-place with a dimmed overlay. Real-time search, multi-monitor support, off-screen text detection via Accessibility API. Zero third-party dependencies.
-
-### CrossPoint MathML for Xteink X4
-
-Three-repo project to bring mathematical notation to the Xteink X4 e-reader. A [firmware fork](https://github.com/EdenRochmanSharabi/crosspoint-reader) adds on-device MathML linearization to the CrossPoint reader firmware, rendering formulas from plain MathML elements without external dependencies. A [QEMU-based emulator](https://github.com/EdenRochmanSharabi/crosspoint-simulator) runs the real firmware binary on an emulated ESP32-C3 for testing without hardware. A [CLI pipeline](https://github.com/EdenRochmanSharabi/math-epub-pipeline) audits and adapts math EPUBs for the device: TeX-to-MathML conversion, XML repair, font coverage checks, and OCR-based PDF-to-EPUB with verification.
-
 ## Open Source Contributions
 
 ### [OpenMC](https://github.com/openmc-dev/openmc) — Monte Carlo particle transport simulation
@@ -41,3 +31,13 @@ Three-repo project to bring mathematical notation to the Xteink X4 e-reader. A [
 - **Remove dead `cov_p` assignment in GLM fit** — Removed a redundant assignment to `cov_p` that was always overwritten by the hessian-based computation immediately after ([PR #9826](https://github.com/statsmodels/statsmodels/pull/9826)).
 - **plot_forest pass `ax` to `dot_plot`** — Fixed `CombineResults.plot_forest` ignoring the caller's `ax` parameter, which created a new figure instead of reusing the provided axes ([#8718](https://github.com/statsmodels/statsmodels/issues/8718), [PR #9829](https://github.com/statsmodels/statsmodels/pull/9829)).
 - **Fix GLMInfluence.hat_matrix_diag method name** — Fixed a typo calling `get_hat_matrix()` instead of `get_hat_matrix_diag()`, which raised `AttributeError` when constructing `GLMInfluence` directly ([#9415](https://github.com/statsmodels/statsmodels/issues/9415), [PR #9830](https://github.com/statsmodels/statsmodels/pull/9830)).
+
+## Projects
+
+### [ScreenFind](https://github.com/EdenRochmanSharabi/ScreenFind) — Universal Ctrl+F for macOS
+
+A menu bar app that captures all screens, runs OCR via Apple Vision framework, and highlights matching text in-place with a dimmed overlay. Real-time search, multi-monitor support, off-screen text detection via Accessibility API. Zero third-party dependencies.
+
+### CrossPoint MathML for Xteink X4
+
+Three-repo project to bring mathematical notation to the Xteink X4 e-reader. A [firmware fork](https://github.com/EdenRochmanSharabi/crosspoint-reader) adds on-device MathML linearization to the CrossPoint reader firmware, rendering formulas from plain MathML elements without external dependencies. A [QEMU-based emulator](https://github.com/EdenRochmanSharabi/crosspoint-simulator) runs the real firmware binary on an emulated ESP32-C3 for testing without hardware. A [CLI pipeline](https://github.com/EdenRochmanSharabi/math-epub-pipeline) audits and adapts math EPUBs for the device: TeX-to-MathML conversion, XML repair, font coverage checks, and OCR-based PDF-to-EPUB with verification.
