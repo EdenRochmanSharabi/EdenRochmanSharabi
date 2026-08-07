@@ -34,6 +34,12 @@ I also enjoy lifting heavy weights, rock climbing, running half marathons, divin
 - **plot_forest pass `ax` to `dot_plot`**: Fixed `CombineResults.plot_forest` ignoring the caller's `ax` parameter, which created a new figure instead of reusing the provided axes ([#8718](https://github.com/statsmodels/statsmodels/issues/8718), [PR #9829](https://github.com/statsmodels/statsmodels/pull/9829)).
 - **Fix GLMInfluence.hat_matrix_diag method name**: Fixed a typo calling `get_hat_matrix()` instead of `get_hat_matrix_diag()`, which raised `AttributeError` when constructing `GLMInfluence` directly ([#9415](https://github.com/statsmodels/statsmodels/issues/9415), [PR #9830](https://github.com/statsmodels/statsmodels/pull/9830)).
 
+## Research
+
+### [The Art of Open Source](https://github.com/EdenRochmanSharabi/The-Art-of-Open-Source): time-series analysis of 4M Pull Requests
+
+A study of 4,048,297 Pull Requests across 580 top open-source repositories (2016-2026). Covers contribution volume trends, temporal patterns, PR response times, contributor retention, the impact of AI coding tools via unsupervised changepoint detection, a composite project health index, and early warning signals for project decline. Data collected via the GitHub GraphQL API, analyzed with time-series decomposition, survival analysis, and forecasting models.
+
 ## Projects
 
 ### [ScreenFind](https://github.com/EdenRochmanSharabi/ScreenFind): Universal Ctrl+F for macOS
