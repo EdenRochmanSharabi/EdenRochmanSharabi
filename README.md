@@ -2,7 +2,7 @@
 
 Developer based in Europe, working in the areas of Valencia and Amsterdam.
 
-I enjoy a wide range of topics, including mathematics, AI/ML, theoretical concepts, especially in mathematics and computer science, UAS, among others. I studied AI & Data Science at Maastricht University, Unmanned Aircraft Systems and Associated Technologies at Univeristy of Valencia and Actuarial Science and Mathematical Finance at the University of Amsterdam (incomplete), and Sociology at the University of Granada.
+I enjoy a wide range of topics, including mathematics, AI/ML, theoretical concepts, especially in mathematics and computer science, UAS, among others. I studied AI & Data Science at Maastricht University, Master’s Unmanned Aircraft Systems and Associated Technologies at Univeristy of Valencia and Master’s Actuarial Science and Mathematical Finance at University of Amsterdam (incomplete), and Sociology at the University of Granada.
 
 Outside of formal coursework, I independently study topics that extend or complement my degrees. Recent subjects include category theory, measure theory, and information theory.
 
